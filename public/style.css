@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    background-image: url("bg.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    color: #333;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    background: linear-gradient(135deg, #49e1c5, #8296ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: text-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h1:hover, h2:hover {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form container */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input sections */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-section input,
+.input-section select {
+    background-color: #f0f9ff;
+}
+
+.input-section input:focus,
+.input-section select:focus {
+    border-color: #74ebd5;
+    outline: none;
+    background-color: #e6f7ff;
+}
+
+.input-section button {
+    background-color: #74ebd5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #5cd1ba;
+    transform: translateY(-2px);
+}
+
+.input-section button:active {
+    transform: translateY(0);
+}
+
+/* Expenses list container */
+.expenses-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expenses-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    /* background-color: #e6f7ff; */
+    font-weight: bold;
+    background-color: rgba(246, 75, 28, 0.9);
+    color:rgb(54, 54, 38)
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e6f7ff;
+}
+
+tfoot #total-amount {
+    text-align: right;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f9ff;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+}
+
+tbody .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+tbody .delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+tbody .delete-btn:active {
+    transform: scale(1);
+}
+
+
+/* Animations */
+.animated-form, .animated-list {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+}
