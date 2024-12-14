@@ -2,7 +2,7 @@
 
 ## Overview
 
-I am thrilled to announce that I have successfully developed a Money Tracker WebApp for managing expenses and income using HTML, CSS, Node.js, and MongoDB. This marks the completion of my project as a web development intern at Bharat Intern.
+I am thrilled to announce that I have successfully developed a Money Tracker WebApp for managing expenses and income using HTML, CSS, Node.js, and MongoDB.
 
 This project has been an invaluable experience, allowing me to apply my full-stack development skills and create a practical tool for personal finance management.
 
@@ -26,11 +26,11 @@ This project has been an invaluable experience, allowing me to apply my full-sta
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/pranav-gujar/Task3-Bharat_Intern
+    git clone https://github.com/pranav-gujar/Money_Tracker_WebApp.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd BharatIntern_MoneyTracker
+    cd Money_Tracker_WebApp
     ```
 3. Install the necessary dependencies:
     ```bash
@@ -51,7 +51,3 @@ This project has been an invaluable experience, allowing me to apply my full-sta
 2. Register a new account or log in with existing credentials.
 3. Start logging your expenses and income.
 4. View charts and summaries to get insights into your financial data.
-
-## Acknowledgements
-
-- Thanks to Bharat Intern for providing the opportunity to work on this project during my web development internship.
