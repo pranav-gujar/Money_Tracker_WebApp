@@ -1,4 +1,4 @@
-# Money Tracker WebApp
+# FinTrack : Money Tracker WebApp
 
 ## Overview
 
